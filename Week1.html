@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<header>NUMBER GUESING GAME</header>
+<div id="message"></div>
+<input type="number" id="number">
+<button id="guessButton">Guess</button>
+<script>
+	var randomValue = Math.floor(Math.random()*100);
+document.getElementById("guessButton").addEventListener('click', function() {
+	var userGuess = document.getElementById('number').value;
+   if (userGuess == randomValue)
+   	{
+    document.getElementById("message").innerHTML="Yayyyyy YOU ARE A LORE OF THE GUESSES";
+    document.getElementById("message").style.backgroundColor="green";
+    }
+   if (userGuess < randomValue)
+   {
+   document.getElementById("message").innerHTML="Your guess was too low, guess higher";
+   document.getElementById("message").style.backgroundColor="red";
+   }
+   if(userGuess > randomValue)
+   {
+   document.getElementById("message").innerHTML="Your guess was too high, guess lower";
+   document.getElementById("message").style.backgroundColor="red";
+   }
+});
+</script>
+
+</body>
+</html>
