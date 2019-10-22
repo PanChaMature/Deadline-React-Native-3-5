@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Week4",
-    "slug": "Week4",
+    "name": "TodoList",
+    "slug": "HW04",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [

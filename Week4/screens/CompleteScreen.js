@@ -1,7 +1,11 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
-export default function CompleteScreen() {
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text>Complete Screen</Text>
@@ -9,8 +13,8 @@ export default function CompleteScreen() {
   );
 }
 
-CompleteScreen.navigationOptions = {
-  header: null
+HomeScreen.navigationOptions = {
+  title: "Completed Todos",
 };
 
 const styles = StyleSheet.create({

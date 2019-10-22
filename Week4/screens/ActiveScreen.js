@@ -1,5 +1,9 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
 export default function ActiveScreen() {
   return (
@@ -10,7 +14,7 @@ export default function ActiveScreen() {
 }
 
 ActiveScreen.navigationOptions = {
-  title: 'Active Todos'
+  title: "Active Todos",
 };
 
 const styles = StyleSheet.create({
